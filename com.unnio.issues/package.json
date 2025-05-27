@@ -1,0 +1,24 @@
+{
+  "name": "com.unnio.issues",
+  "version": "0.0.1",
+  "displayName": "Unnio issue tracking",
+  "description": "This package is useful for setting up tests to find issues in your project and those issues don't just have to be in the code but it can also track issues in your scenes and art.\n\nGo to \"window > unnio\" to access issue viewer or to see the tutorial go to \"window > unnio > Open tutorial menu\" to see any tutorials related to this feature. Unnio tutorials will be required for this.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "",
+  "licensesUrl": "",
+  "keywords": [
+    "board",
+    "planner",
+    "kanban",
+    "unnio",
+    "trello",
+    "issues",
+    "issue"
+  ],
+  "author": {
+    "name": "Kyle Edwards",
+    "email": "dsbkhvs2231@outlook.com",
+    "url": "https://bobbobson21.github.io/"
+  }
+}

@@ -1,0 +1,37 @@
+#if UNITY_EDITOR
+
+using UnityEngine; //I had to move this file to the unity editor project because apperently there is no other way to get the unity editor assembly 
+using System; //that is dumb and it make creating custom attubuties with reflection (the ablity to make an attubte run a fuction or create a class) a pain
+using System.Reflection;
+using UnityEditor;
+using System.Linq;
+using EditorPackages.UnnioIssues;
+
+
+namespace Unnio.Issues.OutOfPackageReporters
+{
+    [InitializeOnLoad]
+    internal class reporter_AttributeExacuteorEditor //runs the unit tests
+    {
+        static reporter_AttributeExacuteorEditor()
+        {
+            register_IssueRegister.e_issueRefreshCalled += () => { DoRefresh(false); };
+            register_IssueRegister.e_issueRefreshCalledOffMainThread += () => { DoRefresh(true); };
+        }
+
+        private static void DoRefresh(bool offMainThread) //register the attribute issues
+        {
+            foreach (Type classes in Assembly.GetExecutingAssembly().GetTypes()) //search thougth all classes
+            {
+                var types = from AllUnnioIssuesTests in classes.GetMethods() where AllUnnioIssuesTests.GetCustomAttributes(false).Any(x => (x is UnnioIssueTestAttribute) && (((UnnioIssueTestAttribute)x).m_OffmainThread == offMainThread)) select AllUnnioIssuesTests; //get methods with UnnioIssueTestAttribute
+
+                foreach (MethodInfo function in types)
+                {
+                    function.Invoke(null, new object[] { });
+                }
+            }
+        }
+    }
+}
+
+#endif

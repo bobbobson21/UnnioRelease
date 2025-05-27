@@ -1,0 +1,25 @@
+{
+  "name": "com.unnio.templates",
+  "version": "3.3.1",
+  "displayName": "Unnio template viewer",
+  "description": "This package is useful for hitting the ground running when it comes to Unnio as it allows you to browse the online list of templates for the one that is right for you and your needs. Once you found a template that meets your needs you just have to click the \"Add template to project\" and then click export and now you can use it for what ever you want.\n\nGo to \"window > unnio\" to access the template viewer.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "",
+  "licensesUrl": "",
+  "dependencies": {
+    "com.unnio.main": "3.3.1"
+  },
+  "keywords": [
+    "board",
+    "planner",
+    "kanban",
+    "unnio",
+    "trello"
+  ],
+  "author": {
+    "name": "Kyle Edwards",
+    "email": "dsbkhvs2231@outlook.com",
+    "url": "https://bobbobson21.github.io/"
+  }
+}

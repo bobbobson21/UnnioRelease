@@ -1,0 +1,25 @@
+{
+  "name": "com.unnio.tutorials",
+  "version": "3.3.1",
+  "displayName": "Unnio tutorials",
+  "description": "This package contains tutorials on how to use and interact with Unnio. These tutorials come in the form of slides consisting of text and images providing a great understanding on how thing such as the stack actions work.\n\nGo to \"window > unnio\" to ope up the tutorial menu.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "",
+  "licensesUrl": "",
+  "dependencies": {
+    "com.unnio.main": "3.3.1"
+  },
+  "keywords": [
+    "board",
+    "planner",
+    "kanban",
+    "unnio",
+    "trello"
+  ],
+  "author": {
+    "name": "Kyle Edwards",
+    "email": "dsbkhvs2231@outlook.com",
+    "url": "https://bobbobson21.github.io/"
+  }
+}

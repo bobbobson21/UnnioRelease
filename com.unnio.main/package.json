@@ -1,0 +1,22 @@
+{
+  "name": "com.unnio.main",
+  "version": "3.3.1",
+  "displayName": "Unnio core",
+  "description": "Contains ll the essentials for making Unnio work. Unnio is a kanban board planning manager built in to unity and the advantage of this is that it allows you to make node move around automatically based on information found within your code base/ unity project, this is known as movement conditions. and it also allow you to style the nodes/tiles automatically as well thought something called stack actions.\n\nGo to \"window > unnio\" to access the boards or right click and go to \"create > unnio > new board\" to make a new board you can then double click on to open.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "",
+  "licensesUrl": "",
+  "keywords": [
+    "board",
+    "planner",
+    "kanban",
+    "unnio",
+    "trello"
+  ],
+  "author": {
+    "name": "Kyle Edwards",
+    "email": "dsbkhvs2231@outlook.com",
+    "url": "https://bobbobson21.github.io/"
+  }
+}
